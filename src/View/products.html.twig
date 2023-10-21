@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Produits{% endblock %}</title>
+</head>
+
+<body>{% block body %}
+    <h1>Liste des produits</h1>
+    {% for product in products %}
+    {{ dump(products)}}
+    {% endfor %}
+{% endblock %}</body>
+</html>
+
